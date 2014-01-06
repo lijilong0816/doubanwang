@@ -1,4 +1,4 @@
-package com.chenyc.douban;
+﻿package com.chenyc.douban;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -197,7 +197,7 @@ public class SearchActivity extends BaseActivity {
 				}
 			});
 		} else if (Subject.MUSIC.equals(cat)) {
-			listView.setOnItemClickListener(new OnItemClickListener() {
+			listView.setOnItemClickListener(new OnItemClickListener() { 
 				public void onItemClick(AdapterView<?> parent, View view,
 						int position, long id) {
 					Intent i = new Intent(SearchActivity.this,

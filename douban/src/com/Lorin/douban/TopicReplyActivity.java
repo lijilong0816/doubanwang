@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+import android.widget.Toast; 
 
 import com.chenyc.douban.util.NetUtil;
  
@@ -106,5 +106,5 @@ public class TopicReplyActivity extends BaseActivity{
 	public void showDialog(String str)
 	{
 		pd=ProgressDialog.show(TopicReplyActivity.this, "信息", str);
-	}
+	} 
 }

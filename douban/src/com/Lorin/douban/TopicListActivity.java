@@ -1,4 +1,4 @@
-package com.chenyc.douban;
+﻿package com.chenyc.douban;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,7 +12,8 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.AbsListView;
+
+import android.widget.AbsListView; 
 import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -54,13 +55,13 @@ public class TopicListActivity extends ListActivity{
 		Intent intent=this.getIntent();
 		Bundle extra=intent.getExtras();
 		url=extra.getString("url");
-		editButton=(ImageButton)this.findViewById(R.id.edit_button);
+		editButton=(ImageButton)this.findViewById(R.id.edit_button); 
 		backButton=(ImageButton)this.findViewById(R.id.back_button);
 		
 		editButton.setOnClickListener(new EditButtonListener());
 		backButton.setOnClickListener(new BackButtonListener());
 		//加载数据
-		fillData();
+		fillData(); 
 		
 		this.registerForContextMenu(getListView());
 		listView=this.getListView();
@@ -70,8 +71,8 @@ public class TopicListActivity extends ListActivity{
 			@Override
 			public void onScrollStateChanged(AbsListView view, int scrollState) {
 				// TODO Auto-generated method stub
-				if (lastitem==listAdapter.getCount()&& scrollState == OnScrollListener.SCROLL_STATE_IDLE) {
-					// 判断滚动到底部
+				if  (lastitem==listAdapter.getCount()&& scrollState == OnScrollListener.SCROLL_STATE_IDLE) {
+
 					if(index<topicList.size())
 					{
 						fillData();

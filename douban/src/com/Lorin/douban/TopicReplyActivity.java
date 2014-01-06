@@ -1,4 +1,4 @@
-package com.chenyc.douban;
+﻿package com.chenyc.douban;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.chenyc.douban.util.NetUtil;
-
+ 
 public class TopicReplyActivity extends BaseActivity{
 
 	private EditText edtContent;
@@ -35,12 +35,11 @@ public class TopicReplyActivity extends BaseActivity{
 		edtContent=(EditText)this.findViewById(R.id.topicreply_content);
 		submit=(Button)this.findViewById(R.id.topicreply_submit);
 		
-		//提交按钮的监听器
 		submit.setOnClickListener(new OnClickListener() {
 			
 			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
+		 	public void onClick(View v) {
+				// TODO Auto-generated method stub 
 				content=edtContent.getText().toString();
 				if(content.trim().equals(""))
 				{
@@ -51,9 +50,10 @@ public class TopicReplyActivity extends BaseActivity{
 					sendReply();
 				}
 			}
-		});
+		}); 
 	}
 	
+
 	/**
 	 * 提交回应的内容
 	 * @param url

@@ -1,4 +1,4 @@
-package com.chenyc.douban;
+﻿package com.chenyc.douban;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -9,7 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.view.ContextMenu;
+import android.view.ContextMenu; 
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
